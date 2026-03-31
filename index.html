@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>M. RAM GOPAL | Portfolio</title>
+  <meta name="description" content="Portfolio of M. RAM GOPAL - Software Developer, Data Scientist, and Data Analyst.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="container navbar">
+      <a href="#hero" class="logo">M. RAM GOPAL</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="hero" class="hero section reveal">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <!-- EDIT: Update your name if needed -->
+          <h1>M. RAM GOPAL</h1>
+          <!-- EDIT: Update your role/title line -->
+          <p class="hero-role">Software Developer | Data Scientist | Data Analyst</p>
+          <!-- EDIT: Replace this short intro with your own -->
+          <p class="hero-intro">
+            Highly motivated and detail-oriented professional focused on building dependable software
+            and data-driven solutions. I combine modern development practices with analytical depth to
+            deliver practical business outcomes.
+          </p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">View Projects</a>
+            <a href="#contact" class="btn btn-outline">Contact Me</a>
+          </div>
+        </div>
+        <div class="hero-image-card">
+          <!-- EDIT: Replace with your own profile image -->
+          <img src="assets/profile-placeholder.svg" alt="Profile placeholder image">
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section reveal">
+      <div class="container">
+        <h2>About Me</h2>
+        <!-- EDIT: Write your personal about me description -->
+        <p>
+          I am a highly motivated and detail-oriented developer with hands-on experience in modern
+          software development, data analysis, and cloud technologies. I bring strong analytical
+          thinking and problem-solving skills to every project, with a focus on delivering reliable
+          results. I am committed to building efficient, secure, and scalable systems that solve
+          real-world challenges and improve user experience.
+        </p>
+      </div>
+    </section>
+
+    <section id="skills" class="section section-muted reveal">
+      <div class="container">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+          <!-- EDIT: Update your technical skills -->
+          <article class="skill-card">
+            <h3>Core Technologies</h3>
+            <p>Python, SQL, AWS, HTML, Java, Linux</p>
+          </article>
+          <article class="skill-card">
+            <h3>Cloud & Infrastructure</h3>
+            <p>AWS services, Linux environment setup, deployment workflows</p>
+          </article>
+          <article class="skill-card">
+            <h3>Development Focus</h3>
+            <p>Backend development, SQL optimization, secure authentication</p>
+          </article>
+          <article class="skill-card">
+            <h3>Strengths</h3>
+            <p>Analytical thinking, problem-solving, scalable system design</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section reveal">
+      <div class="container">
+        <h2>Projects</h2>
+        <div class="projects-grid">
+          <!-- EDIT: Replace project title/description/link as needed -->
+          <article class="project-card">
+            <img src="assets/project-placeholder.svg" alt="Project placeholder image">
+            <div class="project-content">
+              <h3>Online Banking System</h3>
+              <p>
+                A secure and scalable online banking application that enables users to manage accounts,
+                transfer funds, monitor balances, and track transaction history. The system ensures high
+                availability, data integrity, and secure authentication.
+              </p>
+              <p><strong>Tech Used:</strong> Python, SQL, AWS (RDS, EC2, S3), HTML, Linux</p>
+              <p>
+                <strong>Contribution:</strong> Designed backend modules, implemented authentication,
+                optimized SQL operations, and deployed the system using AWS for high performance.
+              </p>
+              <a href="#" target="_blank" rel="noopener noreferrer">View Project</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section section-muted reveal">
+      <div class="container">
+        <h2>Contact</h2>
+        <!-- EDIT: Set your preferred contact email handling -->
+        <form id="contactForm" class="contact-form" novalidate>
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" placeholder="Your name" required aria-describedby="nameError">
+            <small id="nameError" class="field-error" aria-live="polite"></small>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="you@example.com" required aria-describedby="emailError">
+            <small id="emailError" class="field-error" aria-live="polite"></small>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Write your message..." required aria-describedby="messageError"></textarea>
+            <small id="messageError" class="field-error" aria-live="polite"></small>
+          </div>
+
+          <button type="submit" class="btn btn-primary">Send Message</button>
+          <p id="formStatus" class="form-status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <p>&copy; <span id="year"></span> M. RAM GOPAL. All rights reserved.</p>
+      <ul class="social-links">
+        <!-- EDIT: Replace these with your real social URLs -->
+        <li>
+          <a href="https://github.com/ramgopal08" target="_blank" rel="noopener noreferrer">
+            <img src="assets/icon-github.svg" alt="" aria-hidden="true">GitHub
+          </a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/ram-gopal-mandala-ba4789288/" target="_blank" rel="noopener noreferrer">
+            <img src="assets/icon-linkedin.svg" alt="" aria-hidden="true">LinkedIn
+          </a>
+        </li>
+        <li>
+          <a href="mailto:your-email@example.com">
+            <img src="assets/icon-email.svg" alt="" aria-hidden="true">Email
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
